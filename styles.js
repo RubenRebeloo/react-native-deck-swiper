@@ -61,6 +61,21 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     marginTop: 30,
     marginLeft: -30
+  },
+  backCard: {
+    width: 298 * RkTheme.current.metrics.ratioY,
+    height: 428 * RkTheme.current.metrics.ratioY,
+    alignSelf: 'center',
+    opacity: 0.3,
+    borderRadius: 5,
+    backgroundColor: "#ffffff",
+    shadowColor: "#5554853d",
+    shadowOffset: {
+      width: 0,
+      height: 0
+    },
+    shadowRadius: 15,
+    shadowOpacity: 1
   }
 })
 
