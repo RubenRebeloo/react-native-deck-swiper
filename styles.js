@@ -1,5 +1,10 @@
 import { StyleSheet } from 'react-native'
 
+
+const cardImageAspectRatio = 428 / 298
+const cardImageHeight = 428
+const cardImageWidth = cardImageHeight / cardImageAspectRatio
+
 const styles = StyleSheet.create({
   card: {
     flex: 1,
@@ -63,8 +68,8 @@ const styles = StyleSheet.create({
     marginLeft: -30
   },
   backCard: {
-    width: 298 * RkTheme.current.metrics.ratioY,
-    height: 428 * RkTheme.current.metrics.ratioY,
+    width: cardImageWidth,
+    height: cardImageHeight,
     alignSelf: 'center',
     opacity: 0.3,
     borderRadius: 5,
