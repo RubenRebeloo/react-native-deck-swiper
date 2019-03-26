@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native'
-
+import { RkTheme } from 'react-native-ui-kitten'
 
 const cardImageAspectRatio = 428 / 298
-const cardImageHeight = 428
+const cardImageHeight = 428 * RkTheme.current.metrics.ratioY
 const cardImageWidth = cardImageHeight / cardImageAspectRatio
 
 const styles = StyleSheet.create({
